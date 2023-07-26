@@ -6,13 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Макдональдз</title>
   <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header__container">
-        header
+      <div class="header__upper">
+        <div class="header__upper__container">
+          <a href="" class="header__upper__logo"><img src="images/logo.png" alt="logo"></a>
+          <form action="" class="header__upper__form nosubmit">
+            <input type="search" name="" list="#cities" id="#form__location"
+              class="header__upper__form__location nosubmit" placeholder="Вкажіть Ваше місто..." onkeyup="getCities()"
+              onchange="changeLocation()">
+            <datalist id="#cities">
+            </datalist>
+          </form>
+          <div class="header__upper__location" id="#location"></div>
+          <div class="header__upper__menu">
+            <button class="header__upper__menu__join__btn">Увійти</button>
+            <button class="header__upper__menu__cart__btn">Кошик</button>
+          </div>
+        </div>
+      </div>
+      <div class="header__lower">
+        <div class="header__lower__container">
+          <div class="header__lower__title">Макдональдз</div>
+        </div>
       </div>
     </header>
 
