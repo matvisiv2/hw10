@@ -158,7 +158,7 @@ input.nosubmit {
   border: 1px solid #555;
   display: block;
   padding: 9px 4px 9px 40px;
-  background: transparent url("images/svg/location.svg") no-repeat 13px center;
+  background: transparent url("../images/svg/location.svg") no-repeat 13px center;
 }
 
 /* #endregion */
@@ -479,6 +479,10 @@ input.nosubmit {
   color: #FFF;
   font-size: 18px;
   font-weight: 500;
+}
+
+.footer__menu__link:hover {
+  color: #DCDCDC;
 }
 
 /* #endregion */
