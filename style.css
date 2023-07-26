@@ -1,60 +1,56 @@
-/* #region reset */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+@import url('reset.css');
 
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-html,
+/* #region body*/
 body {
-  height: 100%;
   line-height: 1;
-  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   background-color: #ECECEC;
   color: #000000;
 }
 
-button {
-  background-color: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  color: inherit;
-}
-
 .wrapper {
   min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
+.page {
+  flex: 1 1 auto;
+}
+
+/* #endregion */
+
+/* #region selectors */
+[class*="__container"] {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1249.98px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 990.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+
+/* #endregion */
+
+/* #region */
+/* #endregion */
+
+/* #region */
 /* #endregion */
