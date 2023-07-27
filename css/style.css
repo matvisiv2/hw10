@@ -128,7 +128,7 @@ body {
 .header__upper__form__location {
   border: none;
   background: transparent;
-  min-width: 500px;
+  min-width: 400px;
   margin: 0;
   padding: 7px 8px;
   border: 1px solid transparent;
@@ -136,6 +136,18 @@ body {
   color: #A1A1A1;
   font-size: 16px;
   font-weight: 500;
+}
+
+@media (max-width: 990.98px) {
+  .header__upper__form__location {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header__upper__form__location {
+    min-width: 200px;
+  }
 }
 
 .header__upper__form__location::placeholder {
@@ -235,6 +247,25 @@ input.nosubmit {
 .menu__list {
   display: flex;
   gap: 25px;
+}
+
+@media (max-width: 1249.98px) {
+  .menu__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 990.98px) {
+  .menu__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .menu__list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .menu__item {
@@ -405,6 +436,20 @@ input.nosubmit {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #DCDCDC;
+}
+
+@media (max-width: 990.98px) {
+  .cart__box__item {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cart__box__item {
+    flex-direction: column;
+  }
 }
 
 .cart__box__item__title {
