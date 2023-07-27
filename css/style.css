@@ -357,7 +357,9 @@ input.nosubmit {
   display: inline;
 }
 
-.sales__description__heart {}
+.sales__description__heart {
+  cursor: pointer;
+}
 
 .sales__description__btn {
   width: 113px;
