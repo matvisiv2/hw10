@@ -405,7 +405,13 @@ input.nosubmit {
   color: #979797;
   font-size: 12px;
   font-weight: 500;
+  line-height: 17px;
 }
+
+.cart__box__item__ingredients li {
+  list-style: inside;
+}
+
 
 .plus__btn,
 .minus__btn {

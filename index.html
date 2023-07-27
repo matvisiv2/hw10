@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/scripts.js"></script>
   <script src="js/scroll.js"></script>
+  <script src="js/shopping.js"></script>
 </head>
 
 <body onscroll="scrollCheck()">
@@ -366,11 +367,11 @@
                     </ul>
                   </div>
                   <div>
-                    <button class="plus__btn">+</button>
-                    <span class="count">1</span>
-                    <button class="minus__btn">-</button>
+                    <button class="plus__btn" onclick="plusOne('big_mak_menu')">+</button>
+                    <span class="count" id="#count">1</span>
+                    <button class="minus__btn" onclick="minusOne('big_mak_menu')">-</button>
                   </div>
-                  <div class="amount">120 ₴</div>
+                  <div class="amount"><span id="#amount">120</span> ₴</div>
                 </div>
               </div>
               <div class="cart__delivery">
@@ -381,7 +382,7 @@
             <div>
               <button class="cart__order__btn">
                 <div>Замовити</div>
-                <div><span class="summary">410</span>₴</div>
+                <div><span id="#summary">170</span>₴</div>
               </button>
             </div>
           </div>
