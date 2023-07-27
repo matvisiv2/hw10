@@ -76,10 +76,6 @@ body {
   [class*="__container"] {
     max-width: 750px;
   }
-
-  [class*="__right"] {
-    width: 200px;
-  }
 }
 
 @media (max-width: 767.98px) {
@@ -448,7 +444,8 @@ input.nosubmit {
 
 @media (max-width: 767.98px) {
   .cart__box__item {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: start;
   }
 }
 

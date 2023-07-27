@@ -126,7 +126,7 @@ let cart = [];
 
 function like(item) {
   items[item].like = !items[item].like;
-  document.getElementById(`#${item}__like`).setAttribute("src", `images/svg/heart${items[item].like ? '-fill' : ''}.svg`);
+  [...document.getElementsByClassName(`${item}__like`)].forEach((el) => el.setAttribute("src", `images/svg/heart${items[item].like ? '-fill' : ''}.svg`));
 }
 
 function calcSummary() {
@@ -248,8 +248,9 @@ function createHTMLItemElement(item) {
   sales__description__heart.setAttribute("class", "sales__description__heart");
   const heart = document.createElement("img");
   heart.setAttribute("src", `images/svg/heart${items[item].like ? '-fill' : ''}.svg`);
-  heart.setAttribute("id", `#${item}__like`)
-  heart.setAttribute("onclick", `like("${item}");`)
+  heart.setAttribute("class", `${item}__like`);
+  heart.setAttribute("id", `#${item}__like`);
+  heart.setAttribute("onclick", `like("${item}");`);
   sales__description__heart.append(heart);
 
   sales__description__footer.append(sales__description__price, sales__description__heart);
